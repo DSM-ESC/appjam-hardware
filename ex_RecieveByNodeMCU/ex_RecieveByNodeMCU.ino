@@ -8,6 +8,7 @@ void setup() {
 
 void loop() { // run over and over
   if (Serial.available()) {
+    Serial.println("RECIEVE.");
     Serial.write(Serial.read());
   }
 }
